@@ -10,4 +10,4 @@ spec:
     apiVersion: apps/v1
     kind: Deployment
     name: php-apache
-  targetCPUUtilizationPercentage: 35
+  targetCPUUtilizationPercentage: 50
