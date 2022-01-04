@@ -6,12 +6,11 @@ Status will be checked every 15secs
 
 Here are the commands to test with (after deploying yaml files):
   # Get HPA status: 
-        kubectl get hpa
-  
+    kubectl get hpa
   # Apply test workload pressure: 
-        kubectl run -i --tty load-generator --rm --image=busybox --restart=Never -- /bin/sh -c "while sleep 0.01; do wget -q -O- http://php-apache; done"
+    kubectl run -i --tty load-generator --rm --image=busybox --restart=Never -- /bin/sh -c "while sleep 0.01; do wget -q -O- http://php-apache; done"
   # Watch the HPA scale:
-        kubectl get hpa php-apache --watch
+    kubectl get hpa php-apache --watch
   # Get deployment status:
     kubectl get deployment php-apache
 
