@@ -13,6 +13,6 @@ Here are the commands to test with (after deploying yaml files):
   # Watch the HPA scale:
         kubectl get hpa php-apache --watch
   # Get deployment status:
-        kubectl get deployment php-apache
+    kubectl get deployment php-apache
 
 Good Luck!
